@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #171717;
+    width: 100vw;
+    height: auto;
+    display: grid;
+    align-items: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+
+
+
+
+main{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+
+    section{
+        width: 100%;
+        max-width: 832px;
+        height: 100vh;
+        max-height: 450px;
+        background: #313131;
+    }
+    
+}
+
+#grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    .box {
+        &:nth-child(1){
+            background: green;
+        }
+        &:nth-child(2){
+            background: yellow;
+        }
+        &:nth-child(3){
+            background: mintcream;
+        }
+        &:nth-child(4){
+            background: rgb(106, 150, 133);
+        }
+
+    }
+}
+
